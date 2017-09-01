@@ -1,0 +1,118 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+.panel-heading{
+    text-align: center;
+    line-height: 5px;
+    color: #fff;
+    background-color: #1f8381;
+    font-size: 14px;
+    font-size: 1.4rem;
+    top: -15px;
+    font-family: "Gravur","GravurCondensed-Regular","Helvetica Neue","Arial Narrow",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.base-turquoise .tcom-theme-bg-33 {
+    background-color: #1f8381;
+}
+.product-grid {
+    border: 1px solid #dadada;
+}
+.product-grid-item img {
+    width: 115px;
+    height: 230px;
+    display: block;
+    margin: 0 auto;
+
+}
+.product-grid-item-name {
+    text-align: center;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 22px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+#accrd {
+    text-align: center;
+}
+#accrdtoggle{
+    font-size: 20px;
+}
+#divcol{
+    background-color: red;
+}
+.price-from{
+    width: 50%;
+    text-align: right;
+    padding-right: 10px;
+   
+}
+.fix-plan-price-cont{
+    line-height: 21px;
+    padding-left: 22px;
+    margin-top: 11px;
+    border-left: 1px solid #dadada;
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+    width: 45%;
+    text-align: left;
+    overflow: visible;
+}
+#unit{
+    position: relative;
+    top: -20px;
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: "Gravur","GravurCondensed-Regular","Helvetica Neue","Arial Narrow",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#cpm{
+    font-size: 30px
+}
+#permonth{
+    position: relative;
+    top: -20px;
+    font-size: 15px;
+    font-family: "Gravur","GravurCondensed-Regular","Helvetica Neue","Arial Narrow",Helvetica,Arial,sans-serif;
+}
+#fixplan{
+    top: 4px;
+}
+.min-cost{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 0 10px;
+}
+.col-sm-4{
+    padding: 30px;
+    text-align: left;
+}
+.content-heading{
+    font-family: "Akkurat-light","Helvetica Neue","Arial Narrow",Helvetica,Arial,sans-serif;
+    display: block;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 13px;
+    margin-bottom: 10px;
+}
+.row{
+    margin-bottom: 5px;
+    margin-left: 5%;
+    width: 90%;
+}
+.chkval{
+    margin-left: 5px;
+}
+.accrdn{
+    margin-left: 5%;
+    width: 90%;
+}
+.blutick{
+    margin-top: 180px;
+    width: 50px; 
+    height: 50px;
+}

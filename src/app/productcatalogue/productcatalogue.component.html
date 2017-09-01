@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="accrdn">
+    <accordion [showArrows]="true">
+      <accordion-group id="accrd">
+        <accordion-heading>
+          <accordion-toggle id="accrdtoggle">Phone features</accordion-toggle>
+        </accordion-heading>
+
+        <div class="col-sm-4">
+          <span class="content-heading">Brands</span>
+          <div *ngFor="let filterItem of filter.brand;" class="row">
+            <input type="checkbox" (change)="toggleCheckbox(filterItem, $event, 'brand')"><span class="chkval">{{filterItem}}</span>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <span class="content-heading">Operating System</span>
+          <div *ngFor="let filterItem of filter.os;" class="row">
+            <input type="checkbox" (change)="toggleCheckbox(filterItem, $event, 'os')"><span class="chkval">{{filterItem}}</span>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <span class="content-heading">Features</span>
+          <div *ngFor="let filterItem of filter.features;" class="row">
+            <input type="checkbox" (change)="toggleCheckbox(filterItem, $event, 'features', filter.features)"><span class="chkval">{{filterItem | uppercase}}</span>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 product-grid" *ngFor="let product of productCatalogue | productfilter:obj:obj.brandcheckboxArray.length:obj.oscheckboxArray.length:obj.featurescheckboxArray.length">
+      <div class="panel-heading promo-strip" *ngIf="product.hotBuy">New</div>
+      <table>
+        <tr>
+          <td style="width: 50px; height: 260px;">
+            <!--<span *ngIf="product.4gx"><img src="http://thephoneshop.net.au/bluetick.gif" class="img-responsive" alt="Image" style="margin-top: 180px;width: 50px; height: 50px;"></span>-->
+            <span *ngIf="product.bluetick"><img src="http://thephoneshop.net.au/bluetick.gif" class="img-responsive blutick" alt="Image" ></span></td>
+          <td class="panel-body product-grid-item"><img src={{product.imgurl}} class="img-responsive" alt="Image">
+          </td>
+        </tr>
+      </table>
+
+      <p class="product-grid-item-name">
+        <span>{{product.name}}</span>
+      </p>
+      <table>
+        <tr>
+          <td class="price-from">
+            Starting from<br>
+            <span id="unit">$</span><span id="cpm">{{product.totalRecurringCharge}}</span><span id="permonth">per month</span>
+          </td>
+          <td class="fix-plan-price-cont">
+            <div><span id="fixplan">$</span>{{product.deviceRecurringCharge}} plan</div>
+            <div><span id="fixplan">$</span>{{product.planRecurringCharge}} phone</div>
+          </td>
+        </tr>
+      </table>
+      <p class="min-cost">{{product.contractTerm}} month minimum term.<br> Minimum total cost
+        <span><b>${{product.mincost}}</b></span></p>
+    </div>
+  </div>
