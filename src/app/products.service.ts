@@ -24,7 +24,7 @@ export class ProductsService {
           "deviceStartDate": "10-08-2017",
           "deviceEndDate": "30-04-2018",
           "default": true,
-          "featured": true,
+          "featured": false,
           "bonusGift": false,
           "hotBuy": true,
           "bluetick": false,
