@@ -16,6 +16,7 @@
 }
 .product-grid {
     border: 1px solid #dadada;
+    height: 426px;
 }
 .product-grid-item img {
     width: 115px;
